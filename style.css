@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@400..700&display=swap");
+
+body {
+  font-family: "Agbalumo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(330, 100%, 98%);
+  color: #333;
+  box-sizing: border-box;
+}
+.recipe-container {
+  max-width: 580px;
+  margin: 40px auto;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.recipe-image-container {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.recipe-header {
+  margin-left: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.recipe-description {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #555;
+  margin-top: -20px;
+}
+
+.recipe-details,
+.recipe-preparation,
+.recipe-cooking,
+.recipe-ingredients,
+.recipe-instructions,
+.recipe-nutrition {
+  margin: 16px 0;
+}
+
+.recipe-details-title,
+.recipe-preparation-title,
+.recipe-cooking-title,
+.recipe-ingredients-title,
+.recipe-instructions-title,
+.recipe-nutrition-title {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+.recipe-details-title {
+  color: hsl(332, 54%, 40%);
+  font-weight: bold;
+  margin-left: 20px;
+  font-family: agbalumo, sans-serif;
+}
+.recipe-details {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 30px;
+  line-height: 2;
+  max-width: 520px;
+  padding: 5px;
+  border-radius: 13px;
+
+  background-color: hsl(330, 100%, 98%);
+}
+.recipe-ingredients-title {
+  color: hsl(14, 58%, 38%);
+  font-weight: bold;
+  margin-left: 20px;
+    font-family: agbalumo, sans-serif;
+}
+.recipe-ingredients {
+        font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 15px;
+  line-height: 2;
+  max-width: 520px;
+  padding: 5px;
+  border-radius: 13px;
+  margin-top: -30px;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.recipe-instructions-title {
+  color: hsl(14, 58%, 38%);
+  font-weight: bold;
+  margin-left: 18px;
+    font-family: agbalumo, sans-serif;
+}
+.recipe-instructions {
+        font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 15px;
+  line-height: 2;
+  max-width: 520px;
+  padding: 5px;
+  border-radius: 13px;
+  margin-top: -30px;
+}
+.recipe-nutrition-title {
+  color: hsl(14, 58%, 38%);
+  font-weight: bold;
+  margin-left: 18px;
+}
+
+.recipe-nutrition-description {
+      font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #777;
+  margin-bottom: 20px;
+  margin-left: 19px;
+
+}
+.recipe-nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition-line {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-nutrition th,
+.recipe-nutrition td {
+  text-align: left;
+}
+
+.recipe-nutrition tr:hover {
+  background-color: #f1f1f1;
+}
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #aaa;
+  margin-top: 20px;
+}
+@media screen and (max-width: 750px) {
+    .recipe-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .recipe-header {
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+
+    .recipe-details, 
+    .recipe-ingredients,
+    .recipe-instructions {
+        margin-left: 10px;
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    .recipe-description {
+        font-size: 0.9rem;
+    }
+
+    .nutrition-line {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .recipe-container {
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .recipe-header {
+        font-size: 0.9rem;
+    }
+
+    .recipe-details-title,
+    .recipe-ingredients-title,
+    .recipe-instructions-title,
+    .recipe-nutrition-title {
+        font-size: 1.2em;
+    }
+}
